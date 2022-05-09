@@ -1,0 +1,23 @@
+{
+  "name": "forca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marzelop/forca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marzelop/forca/issues"
+  },
+  "homepage": "https://github.com/marzelop/forca#readme",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  }
+}
