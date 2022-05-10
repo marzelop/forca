@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+}
+
+* {
+    font-family: Ubuntu, Arial, sans-serif;
+}
+
+:root {
+    --cor1: #FFE524;
+    --cor2: #E8AF25;
+    --cor3: #FF9D35;
+    --cor4: #E85925;
+    --cor5: #FF2D29;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    background-color: var(--cor5);
+    text-align: center;
+    min-height: 100px;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    color: white;
+    font-weight: bold;
+}
