@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "app": "electron ."
+    "app": "electron .",
+    "start": "webpack --mode production -w"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "homepage": "https://github.com/marzelop/forca#readme",
   "devDependencies": {
     "electron": "^18.2.0"
+  },
+  "dependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   }
 }

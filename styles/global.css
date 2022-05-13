@@ -25,7 +25,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
 }
 
 header {
@@ -48,4 +48,14 @@ header h1 {
 
     color: white;
     font-weight: bold;
+}
+
+main {
+    margin: 0 auto;
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+
+    background-color: var(--cor4);
+
+    height: calc(100vh - var(--header-height));
 }

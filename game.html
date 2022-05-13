@@ -6,10 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <script src="gamestart.js"></script>
+    <script src="gamelogic.js"></script>
 </head>
 <body>
     <header>
         <h1>HANGMAN GAME</h1>
     </header>
+    <main>
+        <div id="game-info">
+            <div id="display-lives-container">
+                <img id="display-lives" src="img/game/hangman0.png" alt="Display-Lives">
+            </div>
+            <div id="game-data">
+                <h1>Attempts:</h1>
+                <ul id="attempt-list">
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+                <h1>Word:</h1>
+                <div id="word-state">_ _ _ _ _</div>
+            </div>
+        </div>
+        <div id="keyboard">
+            <div class="kbd-layer">
+                <input class="kbd-btn" type="button" value="Q" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="W" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="E" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="R" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="T" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="Y" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="U" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="I" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="O" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="P" onclick="sendInput(this.value)">
+            </div>
+            <div class="kbd-layer">
+                <input class="kbd-btn" type="button" value="A" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="S" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="D" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="F" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="G" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="H" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="J" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="K" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="L" onclick="sendInput(this.value)">
+            </div>
+            <div class="kbd-layer">
+                <input class="kbd-btn" type="button" value="Z" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="X" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="C" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="V" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="B" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="N" onclick="sendInput(this.value)">
+                <input class="kbd-btn" type="button" value="M" onclick="sendInput(this.value)">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
