@@ -46,6 +46,7 @@ function sendInput(key) {
 }
 
 function endGame(result) {
+    let i
     document.querySelector("#keyboard").style.display = "none"
     if (result) {
         document.querySelector("#game-result").innerHTML = `<h1 style="background-color: #49ff29;">You Won!</h1>
@@ -55,4 +56,8 @@ function endGame(result) {
         document.querySelector("#game-result").innerHTML = `<h1 style="background-color: #FF2D29;">You Lost!</h1>
         <input type="button" value="Restart Game" onclick="startGame()">`
     }
+    for (i = 0; i < revealIndex.length; i++) {
+        revealIndex[i] = 1
+    }
+    updateWordState()
 }

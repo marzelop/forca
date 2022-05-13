@@ -6,6 +6,9 @@ var revealIndex = []
 var errorCounter = 0
 
 startGame()
+document.addEventListener("keypress", (key) => {
+    sendInput(key.key)
+})
 
 async function generateWord() {
     let wordset, newword = ""

@@ -22,8 +22,15 @@ function checkWin() {
 }
 
 function sendInput(key) {
-    let i, keyInWord = false  
+    let i, keyInWord = false, validKeys = "ABCDEFGHIJKLMNOPQRSTUVXWYZ", isValid = false
     key = key.toUpperCase()
+
+    for (i = 0; i < validKeys.length; i++) {
+        if (key === validKeys[i]) { isValid = true; break }
+    }
+
+    if (!isValid) { return }
+
     for (i = 0; i < attempts.length; i++)
         if (key == attempts[i]) {
             alert("Key already pressed. Try another key.")
