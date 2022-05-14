@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "app": "electron .",
-    "start": "webpack --mode production -w"
+    "start": "webpack --mode production -w",
+    "packer": "electron-packager ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "electron": "^18.2.0"
   },
   "dependencies": {
+    "electron": "^18.2.0",
+    "electron-packager": "^15.5.1",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   }
